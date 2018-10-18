@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/magnitude"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/place"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/magnitude" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/landmark"
+            android:textColor="#9E9E9E"
+            />
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/city"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/place"
+        android:orientation="vertical"
+        android:id="@+id/date_time">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:textColor="#9E9E9E"
+            />
+
+        <TextView
+            android:id="@+id/waqt"
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#9E9E9E"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
